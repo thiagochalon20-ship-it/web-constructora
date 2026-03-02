@@ -1759,46 +1759,52 @@
     .proyecto-modal-next {
       right: 10px;
     }
+
     .mobile-split-img {
-    display: none;
-  }
-  @media (max-width: 768px) {
-    .desktop-img {
-      display: none !important;
+      display: none;
     }
-    .mobile-split-img {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
+
+    @media (max-width: 768px) {
+      .desktop-img {
+        display: none !important;
+      }
+
+      .mobile-split-img {
+        display: flex;
+        width: 100%;
+        aspect-ratio: 4/5;
+        position: relative;
+        z-index: 1;
+      }
+
+      .mobile-split-img .split-left,
+      .mobile-split-img .split-right {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .mobile-split-img .split-left {
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .mobile-split-img img {
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+        max-width: none;
+      }
+
+      .mobile-split-img .split-left img {
+        object-position: left center;
+      }
+
+      .mobile-split-img .split-right img {
+        object-position: right center;
+        margin-left: -100%;
+      }
     }
-    .mobile-split-img .split-left,
-    .mobile-split-img .split-right {
-      width: 50%;
-      height: 100%;
-      overflow: hidden;
-    }
-    .mobile-split-img .split-left {
-      border-right: 1px solid rgba(255, 255, 255, 0.4);
-    }
-    .mobile-split-img img {
-      width: 200%;
-      height: 100%;
-      object-fit: cover;
-      max-width: none;
-    }
-    .mobile-split-img .split-left img {
-      object-position: left center;
-    }
-    .mobile-split-img .split-right img {
-      object-position: right center;
-      margin-left: -100%;
-    }
-  }
-</style>
+  </style>
 </head>
 
 <body>
@@ -2006,8 +2012,10 @@
             alt="Reforma integral de fachada de vivienda en Pergamino, vista antes y después de la obra con nueva fachada moderna, iluminación y portón"
             loading="lazy" width="1200" height="407">
           <div class="mobile-split-img">
-            <div class="split-left"><img src="antes y despues/reforma_vivienda1_ANTES.jpg" alt="Antes" loading="lazy"></div>
-            <div class="split-right"><img src="antes y despues/reforma_vivienda1_DESPUES.jpg" alt="Después" loading="lazy"></div>
+            <div class="split-left"><img src="antes y despues/reforma_vivienda1_ANTES.jpg" alt="Antes" loading="lazy">
+            </div>
+            <div class="split-right"><img src="antes y despues/reforma_vivienda1_DESPUES.jpg" alt="Después"
+                loading="lazy"></div>
           </div>
           <div class="proyecto-overlay">
             <div class="proyecto-overlay-header">
@@ -2026,8 +2034,10 @@
             alt="Reforma integral de vivienda en Pergamino con galería vidriada, pileta y revestimiento de piedra, vista antes y después"
             loading="lazy" width="1200" height="407">
           <div class="mobile-split-img">
-            <div class="split-left"><img src="antes y despues/reforma_vivienda2_pool_ANTES.jpg" alt="Antes" loading="lazy"></div>
-            <div class="split-right"><img src="antes y despues/reforma_vivienda2_pool_DESPUES.jpg" alt="Después" loading="lazy"></div>
+            <div class="split-left"><img src="antes y despues/reforma_vivienda2_pool_ANTES.jpg" alt="Antes"
+                loading="lazy"></div>
+            <div class="split-right"><img src="antes y despues/reforma_vivienda2_pool_DESPUES.jpg" alt="Después"
+                loading="lazy"></div>
           </div>
           <div class="proyecto-overlay">
             <div class="proyecto-overlay-header">
@@ -2046,8 +2056,10 @@
             alt="Construcción de vivienda nueva de dos plantas en M.H. Alfonzo, vista durante la obra y terminada con revoque y carpintería"
             loading="lazy" width="1200" height="407">
           <div class="mobile-split-img">
-            <div class="split-left"><img src="antes y despues/obra_nueva_alfonzo_ANTES.jpg" alt="Antes" loading="lazy"></div>
-            <div class="split-right"><img src="antes y despues/obra_nueva_alfonzo_DESPUES.jpg" alt="Después" loading="lazy"></div>
+            <div class="split-left"><img src="antes y despues/obra_nueva_alfonzo_ANTES.jpg" alt="Antes" loading="lazy">
+            </div>
+            <div class="split-right"><img src="antes y despues/obra_nueva_alfonzo_DESPUES.jpg" alt="Después"
+                loading="lazy"></div>
           </div>
           <div class="proyecto-overlay">
             <div class="proyecto-overlay-header">
@@ -2065,8 +2077,10 @@
             alt="Galpón metálico para maquinaria agrícola Giambruno en Ferré, vistas exterior e interior de la estructura terminada"
             loading="lazy" width="1200" height="407">
           <div class="mobile-split-img">
-            <div class="split-left"><img src="antes y despues/giambruno_ferre_ANTES.jpg" alt="Antes" loading="lazy"></div>
-            <div class="split-right"><img src="antes y despues/giambruno_ferre_DESPUES.jpg" alt="Después" loading="lazy"></div>
+            <div class="split-left"><img src="antes y despues/giambruno_ferre_ANTES.jpg" alt="Antes" loading="lazy">
+            </div>
+            <div class="split-right"><img src="antes y despues/giambruno_ferre_DESPUES.jpg" alt="Después"
+                loading="lazy"></div>
           </div>
           <div class="proyecto-overlay">
             <div class="proyecto-overlay-header">
@@ -2084,8 +2098,10 @@
             alt="Estructura metálica para Restaurant Fuegos en Pergamino, proceso de montaje de columnas y cerchas de acero"
             loading="lazy" width="1200" height="407">
           <div class="mobile-split-img">
-            <div class="split-left"><img src="antes y despues/restaurant_fuegos_ANTES.jpg" alt="Antes" loading="lazy"></div>
-            <div class="split-right"><img src="antes y despues/restaurant_fuegos_DESPUES.jpg" alt="Después" loading="lazy"></div>
+            <div class="split-left"><img src="antes y despues/restaurant_fuegos_ANTES.jpg" alt="Antes" loading="lazy">
+            </div>
+            <div class="split-right"><img src="antes y despues/restaurant_fuegos_DESPUES.jpg" alt="Después"
+                loading="lazy"></div>
           </div>
           <div class="proyecto-overlay">
             <div class="proyecto-overlay-header">
@@ -2104,8 +2120,10 @@
             alt="Nave industrial con estructura metálica para Frigorífico PIARA en Lincoln, vistas exterior del cerramiento e interior con entrepiso"
             loading="lazy" width="1200" height="407">
           <div class="mobile-split-img">
-            <div class="split-left"><img src="antes y despues/frigorifico_piara_ANTES.jpg" alt="Antes" loading="lazy"></div>
-            <div class="split-right"><img src="antes y despues/frigorifico_piara_DESPUES.jpg" alt="Después" loading="lazy"></div>
+            <div class="split-left"><img src="antes y despues/frigorifico_piara_ANTES.jpg" alt="Antes" loading="lazy">
+            </div>
+            <div class="split-right"><img src="antes y despues/frigorifico_piara_DESPUES.jpg" alt="Después"
+                loading="lazy"></div>
           </div>
           <div class="proyecto-overlay">
             <div class="proyecto-overlay-header">
